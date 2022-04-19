@@ -1,0 +1,5 @@
+Range: 0-10
+
+min(var(resA_A) + var(resA_D),1) *
+min((-1)*(min(ceil(var(resA_D_counter)*10),1)-var(resA_D))+1,1) + 
+min((-1)*(min(ceil(var(resA_D_counter)*10),1)-var(resA_D))+1,1)*(-1)*(1-max(min((-1)*(ceil(var(resA_D_counter)*10)-(var(time_dormant))),1),0))

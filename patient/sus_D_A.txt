@@ -1,0 +1,8 @@
+Range: 0-10
+
+min(var(host_capacity) - min(var(sus_D),1) - var(sus_A) - var(resA_D) - var(resA_A) - var(resAB_A_from_resA) - var(resA_D_A) - var(resB_A_from_susDA) - var(resAB_A_from_susD) - var(resA-B_A) - var(resA_D_A_stressed) - var(resAB_A_from_resADA) - var(resB_A_from_susA) + 
+(((1-min(var(resA_D_A),1))*var(resA_D))*(1-max(min((-1)*(ceil(var(resA_D_counter)*10)-(var(time_dormant)+1)),1),0)) + ((1-min(var(sus_D_A),1))*var(sus_D))*(1-max(min((-1)*(ceil(var(sus_D_counter)*10)-(var(time_dormant)+1)),1),0)) + (1-min(var(resAB_A_from_resA),1))*var(resA_A) + (1-min(var(resAB_A_from_susD),1))*var(sus_D_A) + (1-min(var(resAB_A_from_resADA),1))*var(resA_D_A) + (1-min(var(resB_A_from_susDA),1))*var(sus_D_A) + (1-min(var(resA_D_A_stressed),1))*var(resA_D_A))*var(B) + ((1-min(var(resA_A),1))*var(sus_A) + (1-min(var(resAB_A_from_susD),1))*var(sus_D_A))*var(A),
+(min(max(var(sus_D)*(1-max(min((-1)*(ceil(var(sus_D_counter)*10)-(var(time_dormant))),1),0)),var(sus_D_A)),1) + var(sus_D_A))) - 
+var(A)*2*min(var(sus_D_A),1) -
+var(B)*2*min(var(sus_D_A),1) -
+(1-max(min((-1)*(ceil(var(sus_D_A_counter_A)*10)-var(resB_time)),1),0))

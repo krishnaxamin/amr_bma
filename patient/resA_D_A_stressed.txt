@@ -1,0 +1,3 @@
+Range: 0-10
+
+min(var(resA_D_A)*var(B), 1)
