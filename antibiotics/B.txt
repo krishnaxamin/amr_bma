@@ -1,0 +1,4 @@
+Range: 0-10
+
+min(max(var(resA_A)+var(resA_D_A)+var(sus_A)*(min(var(resA_A),1))*(1-var(A)) + var(sus_D_A)*(min(var(resA_A),1))*(1-var(A))-(var(antibiotic_activation_thresholds)-1),0) + var(B),1) * 1 +
+(-1)*(1-max(min((-1)*(ceil(var(B_counter)*10)-(var(time_B)+1)),1),0))
