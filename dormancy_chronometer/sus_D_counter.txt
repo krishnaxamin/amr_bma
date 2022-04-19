@@ -1,0 +1,3 @@
+Range: 0-100
+
+var(INIT) + var(sus_D_counter)
