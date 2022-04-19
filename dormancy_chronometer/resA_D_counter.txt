@@ -1,0 +1,6 @@
+Range: 0-100
+
+(min(var(resA_A)/10 + var(resA_D)/10,1) *
+min((-1)*(min(var(resA_D_counter),1)-var(resA_D)/10)+1,1) + 
+min((-1)*(min(var(resA_D_counter),1)-var(resA_D)/10)+1,1)*(-1)*(1-max(min((-1)*(var(resA_D_counter)-(var(time_dormant)+1)),1),0))) + 
+var(resA_D_counter)
