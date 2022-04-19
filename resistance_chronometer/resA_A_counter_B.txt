@@ -1,0 +1,5 @@
+Range: 0-100
+
+(min(max(var(resA_A)/10+var(resA_D_A)/10+var(sus_D_A)/10*(min(var(resA_A)/10,1))*(1-var(A)/10)+var(sus_A)/10*(min(var(resA_A)/10,1))*(1-var(A)/10)-(var(antibiotic_activation_thresholds)-1),0) + var(B)/10,1)) * min(max(min(var(host_capacity) - min(var(sus_D)/10,1) - var(sus_A)/10 - var(resA_D)/10 - var(resA_D_A)/10 - var(resAB_A_from_resA)/10 - var(sus_D_A)/10 - var(resB_A_from_susDA)/10 - var(resAB_A_from_susD)/10 - var(resA-B_A)/10 - var(resA_D_A_stressed)/10 - var(resAB_A_from_resADA)/10 - var(resB_A_from_susA)/10 + 
+((1-min(var(resA_D_A)/10,1))*var(resA_D)/10 + (1-min(var(sus_D_A)/10,1))*var(sus_D)/10 + (1-min(var(resAB_A_from_resA)/10,1))*var(resA_A)/10 + (1-min(var(resAB_A_from_susD)/10,1))*var(sus_D_A)/10 + (1-min(var(resAB_A_from_resADA)/10,1))*var(resA_D_A)/10 + (1-min(var(resB_A_from_susDA)/10,1))*var(sus_D_A)/10 + (1-min(var(resA_D_A_stressed)/10,1))*var(resA_D_A)/10)*var(B)/10 + ((1-min(var(resA_A)/10,1))*var(sus_A)/10 + (1-min(var(resAB_A_from_susD)/10,1))*var(sus_D_A)/10)*var(A)/10,
+(min(max(var(sus_A)/10*(1-max(min((-1)*(var(sus_A_counter_A)-var(resA_time)),1),0)),var(resA_A)/10),1) + var(resA_A)/10)),0),1) + var(resA_A_counter_B)
